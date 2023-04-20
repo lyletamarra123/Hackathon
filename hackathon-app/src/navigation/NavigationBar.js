@@ -1,33 +1,30 @@
-import React from 'react'
+
 import { NavLink } from 'react-router-dom';
 
-const NavigationBar = () => {
 
+const NavigationBar = () => {
+ 
     const navLinkstyles = ({isActive}) => {
         return {
             fontWeight:isActive ?  'bold': 'normal',
             textDecoration : isActive ? 'none': 'normal',
         }
+
     }
 
-  return (
+  return(
    <>
-    <div class ="home">
-    <NavLink style = { navLinkstyles } to ='/'>Home </NavLink>
-    </div>
-    <div class ="surplus">
-    <NavLink style = { navLinkstyles } to ='/surplus'>surplus </NavLink>
-    </div>
-    <div class ="buy">
-    <NavLink style = { navLinkstyles } to ='/buy'>buy </NavLink>
-    </div>
-    <div class ="sell">
-    <NavLink style = { navLinkstyles } to ='/sell'>sell </NavLink>
-    </div>
-   
-
+    <NavLink style = { navLinkstyles } to ='/'>ShareEat Logo </NavLink>
+    <NavLink style = { navLinkstyles } to ='/shareEats'>Home </NavLink>
+    <NavLink   style = { navLinkstyles } to ='/edition'>Edition </NavLink>
+    <NavLink  style = { navLinkstyles } to ='/documentation'>Documentation </NavLink>
+    <NavLink style = { navLinkstyles } to ='/costumerStories'>Customers </NavLink>
+    <NavLink style = { navLinkstyles } to ='/Login'>Login </NavLink>
+    {/* onClick = {()=>setShow(false)} */}
    </>
-  )
+  
+
+  );
 }
 
 export default NavigationBar;
