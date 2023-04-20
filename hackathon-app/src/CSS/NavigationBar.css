@@ -1,0 +1,53 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #89A67C;
+    height: 2%;
+    position: absolute;
+    width: 100%;
+    height: fit-content;
+  }
+  .left {
+    display: flex;
+    align-items: left;
+    margin-right: 10%;
+    background-color: #89A67C;
+    height: 2%;
+    height: fit-content;
+    position: relative;
+
+  }
+  .right{
+    display: flex;
+    align-items: right;
+    margin-left: 0;
+    background-color: #89A67C;
+    height: 2%;
+    height: fit-content;
+    position: relative;
+  }
+  .navlink {
+    font-style: 'Segoe UI';
+    font-size: 20px;
+    font-weight: normal;
+    text-decoration: none;
+    color: #000;
+    margin-right: 150px;
+    transition: all 0.3s ease;
+  }
+  
+  .navlink.active {
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .navlink:hover {
+    color: #555;
+  }
+
+  .logo{
+    position: relative;
+    left: 1%;
+    width: 10%;
+  }

@@ -1,11 +1,15 @@
 import React from 'react'
+import myImage from '../assets/all-images/phone.png';
+import '../CSS/ShareEat_main.css';
 
 const ShareEat = () => {
   return (
-    <h2>SHARING FOOF, SHARING LOVE 
-      SHARE EATS BRIWNG PEOPLE ONES MEAL AT A HOME
-    </h2>
-  )
+    <div className="container">
+      <h2>Sharing food, Sharing love</h2>
+      <p>ShareEats brings people together one meal at a time</p>
+      <img src={myImage} alt="My Image" className="phone" />
+    </div>
+  );
 }
 
 export default ShareEat;

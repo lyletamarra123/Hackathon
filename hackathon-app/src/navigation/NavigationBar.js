@@ -1,29 +1,40 @@
 
-import { NavLink } from 'react-router-dom';
-
-
+import { NavLink, useNavigate } from 'react-router-dom';
+import '../CSS/NavigationBar.css';
+import myLogo from '../assets/all-images/logo.png';
 const NavigationBar = () => {
- 
-    const navLinkstyles = ({isActive}) => {
+
+    const navLinkstyles = ({ isActive }) => {
         return {
-            fontWeight:isActive ?  'bold': 'normal',
-            textDecoration : isActive ? 'none': 'normal',
+            fontWeight: isActive ? 'bold' : 'normal',
+            textDecoration: isActive ? 'none' : 'normal',
         }
 
     }
+    const navigate = useNavigate();
 
-  return(
-   <>
-    <NavLink style = { navLinkstyles } to ='/'>(ShareEat Logo) </NavLink>
-    <NavLink   style = { navLinkstyles } to ='/edition'>Edition </NavLink>
-    <NavLink  style = { navLinkstyles } to ='/documentation'>Documentation </NavLink>
-    <NavLink style = { navLinkstyles } to ='/costumerStories'>Customers </NavLink>
-    <NavLink style = { navLinkstyles } to ='/Login'>Login </NavLink>
-    {/* onClick = {()=>setShow(false)} */}
-   </>
-  
+    return (
 
-  );
+        <nav className="navbar">
+            <img src={myLogo} alt="ShareEats" className="logo" onClick = {() => navigate('/')}/>
+            <div className='left'>
+                <NavLink className="navlink" to="/edition">
+                    Edition
+                </NavLink>
+                <NavLink className="navlink" to="/documentation">
+                    Documentation
+                </NavLink>
+                <NavLink className="navlink" to="/costumerStories">
+                    Customers
+                </NavLink>
+            </div>
+            <div className='right'>
+                <NavLink className="navlink" to="/Login">
+                    Login
+                </NavLink>
+            </div>
+        </nav>
+    );
 }
 
 export default NavigationBar;
