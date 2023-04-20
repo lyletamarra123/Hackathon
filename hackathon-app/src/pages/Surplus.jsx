@@ -7,9 +7,7 @@ import Itemsurplus from '../UI/Itemsurplus';
 const Surplus = () => {
   return (
   <>
-    <div>Surplus!</div>
-
-
+ 
     <div> 
    {surplus.map((item) =>(
    <Itemsurplus item = {item} key = {item.id}/>))}

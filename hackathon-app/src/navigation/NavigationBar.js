@@ -14,8 +14,7 @@ const NavigationBar = () => {
 
   return(
    <>
-    <NavLink style = { navLinkstyles } to ='/'>ShareEat Logo </NavLink>
-    <NavLink style = { navLinkstyles } to ='/shareEats'>Home </NavLink>
+    <NavLink style = { navLinkstyles } to ='/'>(ShareEat Logo) </NavLink>
     <NavLink   style = { navLinkstyles } to ='/edition'>Edition </NavLink>
     <NavLink  style = { navLinkstyles } to ='/documentation'>Documentation </NavLink>
     <NavLink style = { navLinkstyles } to ='/costumerStories'>Customers </NavLink>
