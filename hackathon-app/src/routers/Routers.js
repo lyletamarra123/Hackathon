@@ -13,6 +13,8 @@ import Give from '../pagesShare/Give';
 import Locate from '../pagesShare/Locate';
 import Settings from '../pagesShare/Settings';
 import Edition from '../pages/Edition';
+import Support from '../pages/Support';
+
 
 const Routers = () => {
   return (
@@ -32,6 +34,7 @@ const Routers = () => {
     <Route path = "/locate" element = {<Locate/>}/>
     <Route path = "/settings" element = {<Settings/>}/>
     <Route path = "/edition" element = {<Edition/>}/>
+    <Route path = "/support" element = {<Support/>}/>
    </Routes>
    </>
   );
