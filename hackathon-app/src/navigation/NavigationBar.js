@@ -25,7 +25,10 @@ const NavigationBar = () => {
                     Documentation
                 </NavLink>
                 <NavLink className="navlink" to="/costumerStories">
-                    Customers
+                    Customer Stories
+                </NavLink>
+                <NavLink className="navlink" to="/support">
+                    Support
                 </NavLink>
             </div>
             <div className='right'>
