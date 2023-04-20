@@ -1,5 +1,5 @@
 
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 import '../CSS/NavigationBar.css';
 import myLogo from '../assets/all-images/logo.png';
 const NavigationBar = () => {
@@ -11,11 +11,12 @@ const NavigationBar = () => {
         }
 
     }
+    const navigate = useNavigate();
 
     return (
-        
+
         <nav className="navbar">
-            <img src={myLogo} alt="ShareEats" className="logo" />
+            <img src={myLogo} alt="ShareEats" className="logo" onClick = {() => navigate('/')}/>
             <div className='left'>
                 <NavLink className="navlink" to="/edition">
                     Edition
