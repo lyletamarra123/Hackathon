@@ -3,7 +3,7 @@
     display: flex;
     position: relative;
     align-items: center;
-    background-image: url('../assets/all-images/home_bg.png');
+    background-color: #f8f2e0;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -12,7 +12,7 @@
 .card {
     position: relative;
   box-sizing: border-box;
-  background: #ffeaa760;
+  background: #89A67C;
   border: 1px solid white;
   box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
   backdrop-filter: blur(6px);
@@ -31,6 +31,7 @@
   width: max-content;
   left: 22.5%;
   margin-right: 5%;
+  
 }
 
 .containerCard {
@@ -50,4 +51,5 @@
 
 .card img {
     width: 100%;
+    padding: 2%;
 }
